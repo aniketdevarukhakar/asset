@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+.make-flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.justify-left {
+    justify-content: left;
+}
+
+.flex-wrap {
+  flex-wrap: inherit;
+}
+
+.col-2 {
+  width: 100%;
+  margin: 0 50px;
+}
+
+ul {
+  list-style: none;
+}
+
+.divinner {
+  max-width: 1100px;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* start bg gradient */
+
+.bg-faintblue-gradient {
+    background: linear-gradient(to right, #4b6cb7, #182848);
+  }
+
+/* end bg gradient */
+
+/* start buttons */
+
+.button {
+  cursor: pointer;
+}
+
+.btn-grad-light-blue {
+  background-image: linear-gradient(
+    to right,
+    #77a1d3 0%,
+    #79cbca 51%,
+    #77a1d3 100%
+  );
+  padding: 10px 20px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0;
+}
+
+.btn-grad-light-blue:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+/* End buttons */
+
+@media screen and (max-width: 450px) {
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .col-2 {
+    margin: 25px 30px;
+  }
+
+  .divinner {
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 821px) {
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+}
